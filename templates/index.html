@@ -1,0 +1,30 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{%static 'style.css'%}">
+  <title>Document</title>
+</head>
+<body>
+
+{% block content %}
+
+I am the content of the main templating file
+
+{% endblock content %}
+
+    <header>
+        <h1>Welcome to My Django Site</h1>
+        <p>This is a simple page with separate CSS styling.</p>
+        <a href="#" class="btn">Click Me</a>
+    </header>
+
+    <section class="about">
+        <h2>About</h2>
+        <p>This section is styled using an external CSS file.</p>
+    </section>
+</body>
+
+</html>
